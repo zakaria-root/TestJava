@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Test</display-name>
+  
+     <servlet>
+  	<servlet-name>listEtudiant</servlet-name>
+  	<servlet-class>listEtudiant</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>listEtudiant</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>chercheEtudiant</servlet-name>
+  	<servlet-class>ChercherEtudiantId</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>chercheEtudiant</servlet-name>
+  	<url-pattern>/sorte</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ajouterEtudiant</servlet-name>
+  	<servlet-class>AjouterEtudiant</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ajouterEtudiant</servlet-name>
+  	<url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+   <welcome-file>infoEtudiant.jsp</welcome-file>
+   <welcome-file>ajouterEtudiant.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
